@@ -42,14 +42,14 @@ just lint      # format + autofix
 ```
 src/
   shared/            # cross-slice reusable code
-  example_slice/     # copy this to start a new experiment
+  <slice_name>/      # one directory per experiment
     main.py          # CLI entrypoint
     config.yaml      # run config
     build_metadata.py
     scripts/data.py  # dataset/dataloader
     explore/         # throwaway exploration + reports
 tests/
-  example_slice/     # tests mirror the source tree
+  <slice_name>/      # tests mirror the source tree
   shared/
 ```
 

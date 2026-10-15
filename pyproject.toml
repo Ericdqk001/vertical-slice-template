@@ -29,7 +29,7 @@ build-backend = "hatchling.build"
 
 [tool.hatch.build.targets.wheel]
 # List each shippable slice + shared here as you add them.
-packages = ["src/shared", "src/example_slice"]
+packages = ["src/shared"]
 
 # UV configuration
 [tool.uv]
@@ -65,7 +65,7 @@ convention = "google"
 
 [tool.ruff.lint.isort]
 # Add each new slice package name here so imports sort as first-party.
-known-first-party = ["shared", "example_slice"]
+known-first-party = ["shared"]
 
 [tool.pytest.ini_options]
 testpaths = ["tests"]
